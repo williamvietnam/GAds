@@ -33,14 +33,16 @@ android {
         jvmTarget = '11'
     }
 
-    buildFeatures{
+    buildFeatures {
         viewBinding = true
     }
 }
 
 dependencies {
+    // product
+    implementation 'com.github.williamvietnam:GAds:0.1.0'
     // develop
-    implementation project(path: ':GAds')
+//    implementation project(path: ':GAds')
 
     // multidex
     implementation 'com.android.support:multidex:1.0.3'
